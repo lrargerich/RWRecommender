@@ -92,7 +92,6 @@ def recommend(user,BETA,WALKS):
 	sorted_items = sorted(recommendations.items(), key=operator.itemgetter(1), reverse=True)
 	return sorted_items
 
-users_to_recommend = np.random.choice(all_users,num_users)
 for user in users_to_recommend:
 	user = str(user)
 	if user in items_liked_by_user:
